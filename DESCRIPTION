@@ -1,7 +1,7 @@
 Package: netSmooth
 Type: Package
 Title: Network smoothing for scRNAseq
-Version: 1.7.0
+Version: 1.7.1
 Authors@R: c(person("Jonathan", "Ronen", role = c("aut", "cre"),
                      email = "yablee@gmail.com"),
               person("Altuna", "Akalin", role = c("aut")))
@@ -31,7 +31,7 @@ Imports:
     stats,
     methods,
     DelayedArray,
-    HDF5Array
+    HDF5Array (>= 1.15.13)
 Suggests: knitr,
     testthat,
     Rtsne,

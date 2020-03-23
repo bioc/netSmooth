@@ -57,9 +57,6 @@ test_that("netSmooth accepts DelayedMatrix objects", {
 
   singleHDF5 <- as(assay(smallscRNAseq), "HDF5Array")
 
-  rownames(singleHDF5) <- rownames(smallscRNAseq)
-  colnames(singleHDF5) <- colnames(smallscRNAseq)
-
   netSmooth(singleHDF5, smallPPI, alpha=.5)
   netSmooth(singleHDF5, smallPPI, alpha='auto', autoAlphaMethod='entropy')
 
